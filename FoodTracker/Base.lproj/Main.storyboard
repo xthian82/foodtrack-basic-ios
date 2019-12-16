@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,62 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3ch-q8-oEB">
+                                <rect key="frame" x="10" y="64" width="404" height="100.5"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mean Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lU-zn-mTx">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-bI-fga">
+                                        <rect key="frame" x="0.0" y="28.5" width="404" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k88-NS-8kV">
+                                        <rect key="frame" x="0.0" y="70.5" width="151" height="30"/>
+                                        <state key="normal" title="Set Default Label Text"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tkv-bI-fga" firstAttribute="trailing" secondItem="3ch-q8-oEB" secondAttribute="trailingMargin" id="GNu-8N-6u4"/>
+                                    <constraint firstItem="7lU-zn-mTx" firstAttribute="leading" secondItem="3ch-q8-oEB" secondAttribute="leading" constant="8" id="H4V-X7-W7F"/>
+                                    <constraint firstItem="tkv-bI-fga" firstAttribute="leading" secondItem="3ch-q8-oEB" secondAttribute="leading" constant="8" id="KGe-db-fuE"/>
+                                    <constraint firstAttribute="trailing" secondItem="tkv-bI-fga" secondAttribute="trailing" constant="10" id="Qu0-ap-Krd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ch-q8-oEB" secondAttribute="trailing" id="1dC-Ik-EP5"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2KR-0G-WJV"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="Cdc-ME-8db"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="Dz6-lr-j0E"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="EbU-mi-qCH"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="JIL-Vh-uaG"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="JYv-Xl-oSo"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QhI-IC-chT"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="R3n-es-BYG"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="baW-hc-E8e"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dAF-z4-4eV"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lEC-Sq-un7"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qMB-5R-Pc6"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="w6i-DL-0FV"/>
+                            <constraint firstItem="3ch-q8-oEB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="5" id="yav-2Z-RKw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </scene>
     </scenes>
 </document>
