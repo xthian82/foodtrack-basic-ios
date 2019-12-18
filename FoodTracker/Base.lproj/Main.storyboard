@@ -16,26 +16,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3ch-q8-oEB">
-                                <rect key="frame" x="10" y="64" width="404" height="100.5"/>
+                                <rect key="frame" x="10" y="64" width="404" height="492"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mean Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lU-zn-mTx">
-                                        <rect key="frame" x="0.0" y="0.0" width="92" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="15.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-bI-fga">
-                                        <rect key="frame" x="0.0" y="28.5" width="394" height="34"/>
+                                        <rect key="frame" x="0.0" y="23.5" width="394" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k88-NS-8kV">
-                                        <rect key="frame" x="0.0" y="70.5" width="151" height="30"/>
+                                        <rect key="frame" x="0.0" y="57.5" width="151" height="22.5"/>
                                         <state key="normal" title="Set Default Label Text"/>
                                         <connections>
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2D-Aa-Tb9"/>
                                         </connections>
                                     </button>
+                                    <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="center" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="DXp-kp-Ncz">
+                                        <rect key="frame" x="0.0" y="88" width="404" height="404"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DXp-kp-Ncz" secondAttribute="height" multiplier="1:1" id="JcI-Rh-0bi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="NLZ-u5-VQe" appends="YES" id="Txw-Hc-sbi"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="tkv-bI-fga" firstAttribute="trailing" secondItem="3ch-q8-oEB" secondAttribute="trailingMargin" id="GNu-8N-6u4"/>
@@ -68,11 +78,20 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="7lU-zn-mTx" id="Do9-H2-mwS"/>
                         <outlet property="nameTextField" destination="tkv-bI-fga" id="nwO-Eq-Z1u"/>
+                        <outlet property="photoImageVew" destination="DXp-kp-Ncz" id="dwd-uy-Ow6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NLZ-u5-VQe">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="cWq-US-Iyb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
 </document>
