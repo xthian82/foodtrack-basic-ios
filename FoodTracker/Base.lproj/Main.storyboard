@@ -50,6 +50,7 @@
                                 <constraints>
                                     <constraint firstItem="tkv-bI-fga" firstAttribute="trailing" secondItem="3ch-q8-oEB" secondAttribute="trailingMargin" id="GNu-8N-6u4"/>
                                     <constraint firstItem="7lU-zn-mTx" firstAttribute="leading" secondItem="3ch-q8-oEB" secondAttribute="leading" constant="8" id="H4V-X7-W7F"/>
+                                    <constraint firstItem="k88-NS-8kV" firstAttribute="top" secondItem="tkv-bI-fga" secondAttribute="bottom" constant="8" symbolic="YES" id="H8S-dh-aT0"/>
                                     <constraint firstItem="tkv-bI-fga" firstAttribute="leading" secondItem="3ch-q8-oEB" secondAttribute="leading" constant="8" id="KGe-db-fuE"/>
                                     <constraint firstAttribute="trailing" secondItem="tkv-bI-fga" secondAttribute="trailing" constant="10" id="Qu0-ap-Krd"/>
                                 </constraints>
