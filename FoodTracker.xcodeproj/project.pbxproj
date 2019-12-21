@@ -14,6 +14,7 @@
 		8686729523A7AFFA000DB9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8686729423A7AFFA000DB9B1 /* Assets.xcassets */; };
 		8686729823A7AFFA000DB9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8686729623A7AFFA000DB9B1 /* LaunchScreen.storyboard */; };
 		868672A323A7AFFA000DB9B1 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868672A223A7AFFA000DB9B1 /* FoodTrackerTests.swift */; };
+		86BABC1523ABEF34007DB7D1 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BABC1423ABEF34007DB7D1 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		8686729E23A7AFFA000DB9B1 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		868672A223A7AFFA000DB9B1 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		868672A423A7AFFA000DB9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86BABC1423ABEF34007DB7D1 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				8686728D23A7AFF9000DB9B1 /* SceneDelegate.swift */,
 				8686728F23A7AFF9000DB9B1 /* ViewController.swift */,
 				8686729123A7AFF9000DB9B1 /* Main.storyboard */,
+				86BABC1423ABEF34007DB7D1 /* RatingControl.swift */,
 				8686729423A7AFFA000DB9B1 /* Assets.xcassets */,
 				8686729623A7AFFA000DB9B1 /* LaunchScreen.storyboard */,
 				8686729923A7AFFA000DB9B1 /* Info.plist */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86BABC1523ABEF34007DB7D1 /* RatingControl.swift in Sources */,
 				8686729023A7AFF9000DB9B1 /* ViewController.swift in Sources */,
 				8686728C23A7AFF9000DB9B1 /* AppDelegate.swift in Sources */,
 				8686728E23A7AFF9000DB9B1 /* SceneDelegate.swift in Sources */,
