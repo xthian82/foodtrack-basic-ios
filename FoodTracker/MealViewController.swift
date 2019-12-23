@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate,
+class MealViewController: UIViewController, UITextFieldDelegate,
     UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageVew: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
@@ -31,8 +30,8 @@ class ViewController: UIViewController, UITextFieldDelegate,
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        mealNameLabel.text = textField.text
     }
+    
     //MARK: UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // dismiss the picker if the user canceled
